@@ -55,6 +55,23 @@ http://localhost:5173
 - `npm run preview`: previews the production build locally
 - `npm run lint`: runs ESLint
 
+## Deploy to GitHub Pages
+
+This project is configured to deploy automatically to GitHub Pages through GitHub Actions.
+
+1. Push the project to the `main` branch of this repository.
+2. In your GitHub repository, go to `Settings > Secrets and variables > Actions`.
+3. Create a new repository secret named `VITE_WEATHER_API_KEY`.
+4. Paste your valid OpenWeather API key as the secret value.
+5. Go to `Settings > Pages` and make sure the source is set to `GitHub Actions`.
+6. Push a new commit to `main` or run the workflow manually from the `Actions` tab.
+
+Your site will be published at:
+
+```text
+https://justMatheus2.github.io/weather-app/
+```
+
 ## Main Structure
 
 - `src/App.jsx`: main application interface
